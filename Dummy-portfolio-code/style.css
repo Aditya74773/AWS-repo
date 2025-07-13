@@ -61,21 +61,45 @@ header .highlight {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+/* Footer Styles */
 footer {
   background: #1c1c1c;
   color: #fff;
-  padding: 1.5rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
-footer a {
-  color: #00d8ff;
-  text-decoration: none;
-  font-weight: bold;
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
-footer a:hover {
-  text-decoration: underline;
+.footer-btn {
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.footer-btn.github {
+  background: #333;
+}
+
+.footer-btn.linkedin {
+  background: #0077b5;
+}
+
+.footer-btn.email {
+  background: #db4437;
+}
+
+.footer-btn:hover {
+  filter: brightness(1.15);
 }
 
 /* Dark mode styles */
