@@ -1,3 +1,4 @@
+/* Base styles */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -7,6 +8,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Header section */
 header {
   background: linear-gradient(to right, #4facfe, #00f2fe);
   color: white;
@@ -36,6 +38,26 @@ header .highlight {
   border: 2px solid #000;
 }
 
+/* About section */
+.about {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #4facfe;
+}
+
+.about p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Projects section */
 .projects {
   padding: 2rem;
   max-width: 800px;
@@ -61,7 +83,7 @@ header .highlight {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* Footer Styles */
+/* Footer section */
 footer {
   background: #1c1c1c;
   color: #fff;
@@ -125,4 +147,8 @@ body.dark footer {
 body.dark .toggle-btn {
   background: #ffe600;
   color: #000;
+}
+
+body.dark .about h2 {
+  color: #ffe600;
 }
