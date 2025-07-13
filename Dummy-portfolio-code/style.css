@@ -2,31 +2,49 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   color: #222;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
-  background: #007bff;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
   color: white;
-  padding: 2rem;
+  padding: 2.5rem 1rem;
   text-align: center;
 }
 
-header button {
+header .highlight {
+  color: #ffe600;
+}
+
+.toggle-btn {
   margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
+  padding: 0.6rem 1.2rem;
   background: #fff;
-  color: #007bff;
+  color: #4facfe;
+  border: 2px solid #fff;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #ffe600;
+  color: #000;
+  border: 2px solid #000;
 }
 
 .projects {
   padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .projects ul {
@@ -35,39 +53,52 @@ header button {
 }
 
 .projects li {
-  background: #e0e0e0;
-  margin-bottom: 10px;
-  padding: 1rem;
-  border-radius: 8px;
+  background: #e3f2fd;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  border-left: 5px solid #4facfe;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 footer {
-  background: #333;
+  background: #1c1c1c;
   color: #fff;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
 }
 
 footer a {
-  color: #00aced;
+  color: #00d8ff;
   text-decoration: none;
+  font-weight: bold;
 }
 
-/* Dark mode */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Dark mode styles */
 body.dark {
   background-color: #121212;
-  color: #e4e4e4;
+  color: #eee;
 }
 
 body.dark header {
-  background-color: #1a1a1a;
-  color: #fff;
+  background: linear-gradient(to right, #232526, #414345);
+  color: #ffe600;
 }
 
 body.dark .projects li {
-  background-color: #2a2a2a;
+  background-color: #1f1f1f;
+  border-left: 5px solid #ffe600;
 }
 
 body.dark footer {
   background-color: #000;
+}
+
+body.dark .toggle-btn {
+  background: #ffe600;
+  color: #000;
 }
